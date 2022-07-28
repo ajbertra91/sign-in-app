@@ -2,6 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import layoutStyles from '../styles/Layout.module.scss';
 import styles from '../styles/WelcomeBack.module.scss';
+import { trpc } from '../utils/trpc';
 import AjbButton from './components/AjbButton';
 
 const WelcomeBack: NextPage = () => {
@@ -15,7 +16,6 @@ const WelcomeBack: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={layoutStyles.title}>Welcome Back</h1>
-
         <div className={layoutStyles.grid}>
           <AjbButton href={'signIn'} text={'Sign In'}></AjbButton>
           <AjbButton href={'signUp'} text={'Sign Up'}></AjbButton>

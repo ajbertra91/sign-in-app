@@ -1,12 +1,13 @@
 import styles from "../../styles/AjbButton.module.scss";
 
 interface AjbButtonProps {
+  cb: () => void;
   text: string;
   href?: string;
   buttonType?: "button" | "submit" | "reset" | undefined;
 }
 
-function AjbButton({ text, href, buttonType }: AjbButtonProps): JSX.Element {
+function AjbButton({ text, href, buttonType, cb }: AjbButtonProps): JSX.Element {
   if (href) {
     return (
       <div className={styles['ajb-button-container']}>
@@ -16,7 +17,7 @@ function AjbButton({ text, href, buttonType }: AjbButtonProps): JSX.Element {
   } else {
     return (
       <div className={styles['ajb-button-container']}>
-        <button type={buttonType}>{text}</button>
+        <button type={buttonType} onClick={() => cb()}>{text}</button>
       </div>
     )
   }
