@@ -1,0 +1,30 @@
+@import "./variables.scss";
+
+.ajb-button-container {
+  button, a {
+    color: $blue;
+    background-color: white;
+    border-radius: 30px;;
+    padding: 1.6rem 4rem;
+    min-width: 200px;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    font-size: 1.8rem;
+    line-height: 1;
+    box-shadow: $no-border;
+
+    &:hover,
+    &:active,
+    &:focus {
+      box-shadow: $white-border;
+    }
+
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+  margin-top: 10px;
+}

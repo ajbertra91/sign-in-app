@@ -1,0 +1,13 @@
+$blue: rgb(37, 192, 253);
+$dark-blue: rgb(0, 120, 167);
+$white-border: 0 0 0 2px $blue, 0 0 0 4px rgb(255, 255, 255);
+$no-border: 0 0 0 2px $blue, 0 0 0 4px transparent;
+
+$color__accent: white;
+$field__background: $blue;
+$field__background--hover: $dark-blue;
+$input__border: $dark-blue;
+$input__border--hover: rgba(0, 0, 0, 0.62);
+$label__color: $dark-blue;
+$font__size: 16px;
+$font__family: Roboto, Arial, sans-serif;
